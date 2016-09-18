@@ -72,13 +72,13 @@ public class Bild {
 		
 		mittelwertGesammt=((mittelwertRot+1)+(mittelwertGruen+1)+(mittelwertBlau+1))/3;
 		if(mittelwertGesammt>=3){
-			mittelwertGesammt=mittelwertGesammt-3;
+			mittelwertGesammt=(int)mittelwertGesammt-1;
 		}
 		
 		System.out.println("-----------------------------------------------------");
 		System.out.println(" rotwert: "+summeRot+"\n summeGruen: "+summeGruen+"\n summeBlau: "+summeBlau);
 		System.out.println("mittelwert gesammt: "+mittelwertGesammt);
-		System.out.println("--------------------------------");
+		//System.out.println("--------------------------------");
 		
 		
 	}
