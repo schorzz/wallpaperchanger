@@ -1,5 +1,6 @@
 package application;
 	
+import adt.Bild;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -16,6 +17,22 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
+			
+
+			System.out.println("test");
+			Bild rot = new Bild("file:////C:/Neuer Ordner/rot.png");
+			Bild gruen = new Bild("file:////C:/Neuer Ordner/gruen.png");
+			Bild blau = new Bild("file:////C:/Neuer Ordner/blau.png");
+			Bild mix = new Bild("file:////C:/Neuer Ordner/mix.png");
+			
+			rot.errechne();
+			gruen.errechne();
+			blau.errechne();
+			mix.errechne();
+			
+			
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -24,5 +41,7 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 		//test
+		
+		
 	}
 }
